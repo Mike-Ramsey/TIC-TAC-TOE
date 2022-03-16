@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Ramsey's Tic-Tac-Toe Project</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <h1>TIC-TAC-TOE</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row row-cols-3">
+            <div class="col-5 text-start">               
+                <div class="form-group">
+                    <input type="text" class="form-control" id="redX" placeholder="Player X" tabindex="1">                       
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <button class="btn btn-success" id="startGame" onclick="startGame();" type="button" tabindex="3">Start</button>
+            </div>
+            <div class="col-5 text-end">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="greenO" placeholder="Player O" tabindex="2">                       
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="alert alert-success text-center fs-1" role="alert" id="greenAlert" style="display: none">
+            <p id="greenAlertText"></p>
+        </div>
+        <div class="alert alert-danger text-center fs-1" role="alert" id="redAlert" style="display: none">
+            <p id="redAlertText"></p>
+        </div>
+        <div class="alert alert-warning text-center fs-1" role="alert" id="draw" style="display: none">
+            <p id="drawText"></p>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row row-cols-3">
+            <div class="col">
+                <img id="a1" class="img-fluid" src="grey.png">
+            </div>
+            <div class="col">
+                <img id="a2" class="img-fluid" src="grey.png">
+            </div>
+            <div class="col">
+                <img id="a3" class="img-fluid" src="grey.png">
+            </div>
+        </div>
+        <br>
+        <div class="row row-cols-3">
+            <div class="col">
+                <img id="b1" class="img-fluid" src="grey.png">
+            </div>
+            <div class="col">
+                <img id="b2" class="img-fluid" src="grey.png">
+            </div>
+            <div class="col">
+                <img id="b3" class="img-fluid" src="grey.png">
+            </div>
+        </div>
+        <br>
+        <div class="row row-cols-3">
+            <div class="col">
+                <img id="c1" class="img-fluid" src="grey.png">
+            </div>
+            <div class="col">
+                <img id="c2" class="img-fluid" src="grey.png">
+            </div>
+            <div class="col">
+                <img id="c3" class="img-fluid" src="grey.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="tictactoe.js"></script>
+</body>
+</html>
